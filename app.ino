@@ -1,4 +1,3 @@
-
 #include <SoftwareSerial.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
@@ -13,7 +12,6 @@ OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
 char myChar;
-float temp;
 
 void setup() {
   delay(1000);
@@ -28,17 +26,11 @@ void setup() {
 
 void loop() {
   sensors.requestTemperatures();
-
-  temp = sensors.getTempCByIndex(0);
-
-  Serial.print("Temperature: ");
-  Serial.print(temp);
-  Serial.println("°C");
-
+  int temp = sensors.getTempCByIndex(0);
+  Serial.println(temp);
   MyBlut.print(temp);
   MyBlut.println(";");
-  delay(100);
- 
+  delay(1000);
   LucesLed();
 }
 
