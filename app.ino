@@ -1,3 +1,13 @@
+/*
+ * Fundacion Kinal
+ * Centro educativo tecnico laboral Kinal
+ * Perito en electonica
+ * Quinto perito
+ * EB5AM 
+ * Taller de electronica digital y reparacion de computadoras
+ * Nombre: Diego Alejandro Culajay Gonzalez
+ * Carnet: 2019485
+*/
 #include <SoftwareSerial.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
