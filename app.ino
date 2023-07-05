@@ -54,9 +54,6 @@ if(MyBlut.available() ){
       digitalWrite(ledA,LOW);
       digitalWrite(ledV,LOW);
       break;
-      default:
-      MyBlut.println("opccion no valida");
-      break;
       }
     }
 }
