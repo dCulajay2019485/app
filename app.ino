@@ -36,7 +36,7 @@ void setup() {
 
 void loop() {
   sensors.requestTemperatures();
-  int temp = sensors.getTempCByIndex(0);
+  float temp = sensors.getTempCByIndex(0);
   Serial.println(temp);
   MyBlut.print(temp);
   MyBlut.println(";");
